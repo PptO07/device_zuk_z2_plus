@@ -29,6 +29,9 @@ DEVICE_MAINTAINER := PranavTemkar
 # Set Boot Animination Resolution
 TARGET_BOOT_ANIMATION_RES := 1080
 
+# ArrowOS Offline Charging
+TARGET_INCLUDE_PIXEL_CHARGER := true
+
 PRODUCT_NAME := arrow_z2_plus
 PRODUCT_DEVICE := z2_plus
 PRODUCT_MANUFACTURER := ZUK
