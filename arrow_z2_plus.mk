@@ -20,10 +20,16 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from z2_plus device
 $(call inherit-product, device/zuk/z2_plus/device.mk)
 
-# Inherit some common VoltageOS stuff.
-$(call inherit-product, vendor/voltage/config/common_full_phone.mk)
+# Inherit some common ArrowOS stuff.
+$(call inherit-product, vendor/arrow/config/common.mk)
 
-PRODUCT_NAME := voltage_z2_plus
+# ArrowOS Properties
+DEVICE_MAINTAINER := PranavTemkar
+
+# Set Boot Animination Resolution
+TARGET_BOOT_ANIMATION_RES := 1080
+
+PRODUCT_NAME := arrow_z2_plus
 PRODUCT_DEVICE := z2_plus
 PRODUCT_MANUFACTURER := ZUK
 PRODUCT_BRAND := ZUK
@@ -36,8 +42,6 @@ TARGET_VENDOR_DEVICE_NAME := z2_plus
 PRODUCT_BUILD_PROP_OVERRIDES += TARGET_DEVICE=z2_plus PRODUCT_NAME=z2_plus
 
 TARGET_VENDOR := zuk
-
-VOLTAGE_BUILD_TYPE = OFFICIAL
 
 # Fingerprint
 PRODUCT_BUILD_PROP_OVERRIDES += \
