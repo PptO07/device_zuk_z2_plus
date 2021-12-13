@@ -14,4 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-$(LOCAL_DIR)/voltage_z2_plus.mk
+$(LOCAL_DIR)/xtended_z2_plus.mk
+
+COMMON_LUNCH_CHOICES := \
+    xtended_z2_plus-user \
+    xtended_z2_plus-userdebug \
+    xtended_z2_plus-eng
